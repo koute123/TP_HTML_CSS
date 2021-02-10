@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	  <meta charset="UTF-8">
+      <link rel=stylesheet href="style.css"></link>
+	</head>
+	<body>
+        <a href="index.html"> Page1 </a>
+        <a href="index2.html">  / Page2 (avec openweather APIs)</a>
+        <script src="script.js"></script>
+        <!--Header-------------------------------------------------------------------->
+        <div id="head">
+            <h1>TP Météo HTML</h1>
+        </div>
+        <!--Body---------------------------------------------------------------------->
+        <label for="city-select">Choisir une ville :</label>
+        <select name="city" id="city-select" onchange=showCity()>
+            <option value="">--Please choose an option--</option>
+            <option value="city_Lyon">Lyon</option>
+            <option value="city_Oujda">Oujda</option>
+            <option value="city_Oran">Oran</option>
+        </select>
+        <label id="selected_city">Vous avez choisi :</label>
+        <div id="flex_container">
+            <div class="city_div" id="city_Lyon">
+                <div>
+                    <h3>Lyon</h3>
+                    <p>20°, pluvieux</p>
+                </div>
+                <img src="rainny.png"></img>
+            </div>
+            <div class="city_div" id="city_Oujda">
+                <div>
+                    <h3>Oujda</h3>
+                    <p>20°, pluvieux</p>
+                </div>
+                <img src="rainny.png"></img>
+            </div>
+            <div class="city_div" id="city_Oran">
+                <div>
+                    <h3>Oran</h3>
+                    <p>20°, pluvieux</p>
+                </div>
+                <img src="rainny.png"></img>
+            </div>
+        </div>
+        <!--Footer-------------------------------------------------------------------->
+        <div id="foot"">
+            <p>By LAKBIR & GHANEM</p>
+            <p>Icones météo par <a href="https://www.flaticon.com/" target="_blank">Flaticon</a></p>
+        </div>
+	</body>
+</html>
