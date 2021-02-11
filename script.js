@@ -42,7 +42,7 @@ function showCityOpenWeather(){
                 }
             }
         };
-        xhttp.open("GET", "http://api.openweathermap.org/data/2.5/weather?q="+City_id.options[City_id.selectedIndex].text+"&appid=85b44872c7f62d2f6f59116b303ea6b2&units=metric", true);
+        xhttp.open("GET", "https://api.openweathermap.org/data/2.5/weather?q="+City_id.options[City_id.selectedIndex].text+"&appid=85b44872c7f62d2f6f59116b303ea6b2&units=metric", true);
         xhttp.send();
     }
     else{ // reset if '--Please choose an option--' is selected
